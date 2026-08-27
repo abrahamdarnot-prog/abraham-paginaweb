@@ -44,8 +44,7 @@
     </header>
 
     <main>
-       <img src="imagem-blog.png" alt="Ilustração sobre tecnologia"> conexões digitais, lâmpada de ideias e capelo de formatura,
-        com o texto Blog Tech Educação.">
+       <img src="imagem-blog.png" alt="Ilustração sobre tecnologia, conexões digitais, lâmpada de ideias e capelo de formatura, com o texto Blog Tech Educação.">
         
         <article>
             <h2>Meu primeiro post</h2>
@@ -54,14 +53,17 @@
             <button>❤️ <span>0</span></button>
         </article>
     </main>
-   </body>
-   <script>
-       const botao = document.queryselector("button");
-       botao.addEventLister("click", botaoclicado);
 
-      function botaoClicado(){
-        console.log("fui clicado");
-      }
+    <script>
+        const botao = document.querySelector("button");
+        const contador = document.querySelector("button span");
 
-   </script>
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            let curtidas = Number(contador.textContent);
+            contador.textContent = curtidas + 1;
+        }
+    </script>
+</body>
 </html>
