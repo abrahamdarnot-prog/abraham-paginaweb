@@ -56,6 +56,15 @@
     </main>
 
     <script>
+        botoes.forEach( funtion(botao){
+            botao.addEventListener("clink", botaoClicado);
+            funtion botaoClicado(){
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                texto.textContent++;
+            }
+        }
+    )
         const botao = document.querySelector("button");
         const contador = document.querySelector("button span");
 
