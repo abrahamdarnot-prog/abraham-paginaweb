@@ -33,6 +33,7 @@
             border: none;
             border-radius: 5px;
             background-color: #A4BED9;
+            margin: 0 5px;
         }
     </style>
 </head>
@@ -44,38 +45,29 @@
     </header>
 
     <main>
-        <!-- Verifique se o nome e a pasta da imagem correspondem ao arquivo real -->
         <img src="imagem-blog.png" alt="Ilustração sobre tecnologia, conexões digitais, lâmpada de ideias e capelo de formatura, com o texto Blog Tech Educação.">
         
         <article>
             <h2>Meu primeiro post</h2>
             <p><strong>Por: Abraham Leiva</strong></p>
             <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-            <button>❤️  <span>0</span></button>
-             <button>👍 <span>0</span></button>
+            <button>❤️ <span>0</span></button>
+            <button>👍 <span>0</span></button>
         </article>
     </main>
 
     <script>
-        botoes.forEach( funtion(botao){
-            botao.addEventListener("clink", botaoClicado);
-            (method) botaoClicado(): void
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-                texto.textContent++;
-        )
-        } 
-        
-  
-        const botao = document.querySelector("button");
-        const contador = document.querySelector("button span");
+        // Seleciona todos os botões da página
+        const botoes = document.querySelectorAll("button");
 
-        botao.addEventListener("click", botaoClicado);
-
-        function botaoClicado() {
-            let curtidas = Number(contador.textContent);
-            contador.textContent = curtidas + 1;
-        }
+        // Percorre cada botão e adiciona o ouvinte de clique
+        botoes.forEach(function(botao) {
+            botao.addEventListener("click", function() {
+                let contador = botao.querySelector("span");
+                let curtidas = Number(contador.textContent);
+                contador.textContent = curtidas + 1;
+            });
+        });
     </script>
 </body>
 </html>
