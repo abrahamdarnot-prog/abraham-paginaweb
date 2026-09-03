@@ -3,54 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog FC Barcelona</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            margin: 0;
+            padding: 20px;
+        }
         header {
-            background-color: #A4BED9;
-            color: #282828;
+            background-color: #A50044; /* Vermelho Barça */
+            color: #EDBB00; /* Amarelo Barça */
             max-width: 800px;
             margin: 0 auto;
-            padding: 16px;
+            padding: 20px;
             text-align: center;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 4px solid #004D98; /* Azul Barça */
         }
         main {
-            background-color: #282828;
-            color: #A4BED9;
-            text-align: center;
+            background-color: #181725;
+            color: #FFFFFF;
             max-width: 800px;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 20px;
+            border-radius: 0 0 8px 8px;
+            box-sizing: border-box;
+        }
+        article {
+            background-color: #22223b;
+            padding: 20px;
+            margin-bottom: 20px;
             border-radius: 8px;
+            border-left: 5px solid #EDBB00;
+        }
+        h2 {
+            color: #EDBB00;
+            margin-top: 0;
+        }
+        ul {
+            text-align: left;
+            line-height: 1.6;
         }
         img {
             max-width: 100%;
             height: auto;
             margin: 15px 0;
+            border-radius: 8px;
         }
         button {
             cursor: pointer;
-            padding: 8px 12px;
+            padding: 10px 15px;
             border: none;
             border-radius: 5px;
-            background-color: #A4BED9;
-            margin: 0 5px;
+            background-color: #004D98;
+            color: #FFFFFF;
+            font-weight: bold;
+            margin: 5px 5px 0 0;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #A50044;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <h1>Visca el Barça! 🔵🔴</h1>
+        <p>Tudo sobre a história, lendas e conquistas do FC Barcelona</p>
     </header>
 
     <main>
-        <img src="imagem-blog.png" alt="Ilustração sobre tecnologia, conexões digitais, lâmpada de ideias e capelo de formatura, com o texto Blog Tech Educação.">
+        <img src="barcelona-equipe.jpg" alt="Elenco do FC Barcelona e troféus conquistados pelo clube">
         
         <article>
-            <h2>Meu primeiro post</h2>
+            <h2>Grandes Ídolos da História</h2>
             <p><strong>Por: Abraham Leiva</strong></p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+            <p>O Barcelona é conhecido por abrigar alguns dos maiores talentos do futebol mundial. Entre os principais destaques estão:</p>
+            <ul>
+                <li><strong>Lionel Messi:</strong> O maior jogador da história do clube, com 672 gols e 35 títulos.</li>
+                <li><strong>Ronaldinho Gaúcho:</strong> O astro que devolveu o sorriso e a magia ao Camp Nou.</li>
+                <li><strong>Xavi Hernández & Andrés Iniesta:</strong> A dupla de meio-campo que definiu a era do "Tiki-Taka".</li>
+                <li><strong>Johan Cruyff:</strong> Lenda como jogador e técnico, criador da filosofia moderna do clube.</li>
+            </ul>
+            <button>❤️ <span>0</span></button>
+            <button>👍 <span>0</span></button>
+        </article>
+
+        <article>
+            <h2>Galeria de Troféus</h2>
+            <p>Principais conquistas do clube ao longo da história:</p>
+            <ul>
+                <li>🏆 <strong>5x</strong> UEFA Champions League</li>
+                <li>🏆 <strong>27x</strong> La Liga (Campeonato Espanhol)</li>
+                <li>🏆 <strong>31x</strong> Copa do Rei</li>
+                <li>🏆 <strong>3x</strong> Mundial de Clubes da FIFA</li>
+            </ul>
             <button>❤️ <span>0</span></button>
             <button>👍 <span>0</span></button>
         </article>
